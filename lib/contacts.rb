@@ -15,5 +15,14 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.each do |contact, contact_val|
+    #at this point, we're in the first level with John Snow and Freddy Mercury
+    if contact == "Freddy Mercury"
+      contact_val.each do |attribute, data|
+        if attribute == :favorite_ice_cream_flavors
+          data.delete_if {|ice_cream| ice_cream == "strawberry"}
+        end
+      end
+    end
+  end
 end
