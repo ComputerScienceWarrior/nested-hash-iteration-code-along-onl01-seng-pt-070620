@@ -15,5 +15,11 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.collect do |contact|
+    #at this point, we're in the first level with John Snow and Freddy Mercury
+    
+    contact.collect do |ice_cream|
+      if   
+    end
+  end
 end
