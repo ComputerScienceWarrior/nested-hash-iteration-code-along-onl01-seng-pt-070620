@@ -19,7 +19,7 @@ def remove_strawberry(contacts)
     #at this point, we're in the first level with John Snow and Freddy Mercury
     if contact == "Freddy Mercury"
       contact_val.each do |attribute, data|
-        binding.pry
+        if attribute == :favorite_ice_cream_flavors
       end
     end
   end
