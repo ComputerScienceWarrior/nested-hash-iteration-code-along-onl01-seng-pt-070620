@@ -15,11 +15,12 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  contacts.collect do |contact|
+  contacts.each do |contact, contact_val|
     #at this point, we're in the first level with John Snow and Freddy Mercury
-    
-    contact.collect do |ice_cream|
-      if   
+    if contact == "Freddy Mercury"
+      contact_val.each do |attribute, data|
+        
+      end
     end
   end
 end
